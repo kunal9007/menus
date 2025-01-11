@@ -1,6 +1,5 @@
 <div align="center">
   <h2>⚡️ dashboard using Nest.js + Next.js + Prisma, can be used as boilerplate though I might create cleaner boilerplate after cleaning this </h2>
-  <p>updated fork by <a href="https://twitter.com/asyncninja">Tapan Rai</a></p>
 </div>
 
 ## Features
