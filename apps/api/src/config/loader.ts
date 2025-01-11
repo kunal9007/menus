@@ -32,7 +32,9 @@ const getEnvLoaderFile = (envFileName) => {
 
 export const configuration = async (): Promise<Record<string, unknown>> => {
   const envLoader = getEnvLoaderFile(process.env.ENV_FILE);
+
   const environment = await import(`./${envLoader}`);
+  console.log("#####env", environment, envLoader)
   const common = await import(`./common`);
 
   // object deep merge

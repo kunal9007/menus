@@ -27,6 +27,7 @@
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slider": "^1.1.2",
     "@radix-ui/react-slot": "^1.0.2",
+    "@reduxjs/toolkit": "^2.5.0",
     "@t3-oss/env-nextjs": "^0.6.0",
     "@tailwindcss/forms": "^0.5.3",
     "@types/node": "20.4.1",
@@ -37,17 +38,19 @@
     "bufferutil": "^4.0.7",
     "class-variance-authority": "^0.6.1",
     "clsx": "^1.2.1",
+    "database": "*",
     "date-fns": "^2.30.0",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "framer-motion": "^10.12.20",
-    "next": "13.4.9",
+    "next": "^15.1.4",
     "next-auth": "^4.22.1",
     "postcss": "8.4.25",
     "prisma-json-types-generator": "^2.5.0",
     "react": "18.2.0",
     "react-custom-events": "^1.1.1",
     "react-dom": "18.2.0",
+    "react-redux": "^9.2.0",
     "react-use": "^17.4.0",
     "server-only": "^0.0.1",
     "socket.io-client": "^4.7.1",
@@ -56,11 +59,11 @@
     "tailwindcss-animate": "^1.0.6",
     "typescript": "5.1.6",
     "use-async-effect": "^2.2.7",
-    "utf-8-validate": "^6.0.3",
-    "database": "*"
+    "utf-8-validate": "^6.0.3"
   },
   "devDependencies": {
     "knip": "^2.15.1",
+    "react-redux": "^9.2.0",
     "ts-node": "^10.9.1"
   }
 }

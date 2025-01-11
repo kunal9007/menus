@@ -1,7 +1,9 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import httpContext = require('express-http-context');
-import helmet = require('helmet');
+// import helmet = require('helmet');
+// import * as helmet from 'helmet';
+import helmet from 'helmet';
 import { ConfigService } from '@nestjs/config';
 import { setContext } from './common/middleware/setContext';
 import { LoggerService } from './common/logger/logger.service';
@@ -24,6 +26,10 @@ async function bootstrap() {
   });
   const config = app.get(ConfigService);
   const appName = config.get('appName');
+  app.enableCors();
+
+  // app.use(helmet());
+
 
   app.use(
     helmet({ contentSecurityPolicy: process.env.NODE_ENV !== 'development' }),
