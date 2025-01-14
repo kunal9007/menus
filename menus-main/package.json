@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@turbo/gen": "*",
+    "eslint":"*",
+    "eslint-config-custom": "*",
+    "prettier": "*",
+    "turbo": "*"
+  },
+  "name": "mono",
+  "license": "MIT",
+  "packageManager": "yarn@1.22.17",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "prisma": {
+    "seed": "ts-node ./packages/database/prisma/seed.ts"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
