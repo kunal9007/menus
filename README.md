@@ -6,7 +6,7 @@
 
 This is a monorepo repository with:
 
-- ⚡️ Next.js 13 with App Router
+- ⚡️ Next.js 15 with App Router
 - 🪺 Nest.js 10
 - ⚛️ React 18
 - ▲ Prisma with Postgres
